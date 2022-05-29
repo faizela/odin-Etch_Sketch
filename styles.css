@@ -1,0 +1,28 @@
+
+.squareContainer {
+ display: flex;
+ border: 4px solid red;
+ gap: 1px;
+ max-width: 400px;
+
+ margin: auto;
+}
+
+
+
+gridRow {
+    border: 2px solid black;
+  
+}
+
+.cell {
+    border: 2px solid gray;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cell:hover {
+    
+}
