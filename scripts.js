@@ -24,7 +24,7 @@ function makeGrid(rownum, colnum){
 
 
 function makeRows (rowNum){
-    for (i =0; i< rowNum; i++){
+    for (let i =1; i <=rowNum; i++){
         let row = document.createElement("div");
         squareContainer.appendChild(row).className = "gridRow";
     }
@@ -32,13 +32,14 @@ function makeRows (rowNum){
 
 
 function makeColumns(cellNum) {
-    for (let col = 0; col < rows.length; col++){
-     for (i= 0; i < cellNum; i++){
-     let newcell = document.createElement("div");
-     rows[i].appendChild(newcell).className = "cell"
-     }
+    for (let col = 0; col < cellNum; col++){
+        for (let i = 0; i < cellNum; i++) {
+           let newcell = document.createElement("div") 
+           rows[i].appendChild(newcell).className = "cell"
+        }
     }
-};
+}
+
 
 
 function bgcolor (cell) {
@@ -93,6 +94,8 @@ defaultGrid()
 Clickbtn.addEventListener("click", numofsqs)
 mouseOn()
 mouseOut()
+//makeRows(32)
+//makeColumns(32)
 //removeBorder()
 //makeGrid(20,20)
 
